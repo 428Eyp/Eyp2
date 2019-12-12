@@ -213,6 +213,17 @@ def draw():
             textAlign(CENTER)
             text("Wooden Stick", width /2, height - 200)
 
+if monster == 7:
+        if dice == 1 or dice == 3 or dice == 4:
+            textAlign(CENTER)
+            text("Enchanted Wolf Skin", width /2, height - 200)
+        elif dice == 2 or dice == 5:
+            textAlign(CENTER)
+            text("Mana Essence", width /2, height - 200)
+        else:
+            textAlign(CENTER)
+            text("Enchanted Wolf Skin x2", width /2, height - 200)
+
 #function to enable mouse clicking in specific locations.        
 def isMouseWithinSpace(x,y,w,h):
     if (x < mouseX < x + w and y < mouseY < y + h):
